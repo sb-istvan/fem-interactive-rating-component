@@ -27,8 +27,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/sb-istvan/fem-interactive-rating-component](https://github.com/sb-istvan/fem-interactive-rating-component)
+- Live Site URL: [https://sb-istvan.github.io/fem-interactive-rating-component/](https://sb-istvan.github.io/fem-interactive-rating-component/)
 
 ## My process
 
@@ -48,7 +48,7 @@ Beyond the challenge's requirement I also added a function to show warning messa
 
 ### Continued development
 
-To my surprise I could handle JavaScrpit DOM manipulation pretty well. However as for the CSS I felt like I was continously just patching it for the Thank You card and I could not make it significantly better on my final code review either. I'm pretty sure there are better solutions for that.
+To my surprise I could handle JavaScrpit DOM manipulation pretty well. However as for the CSS I felt like I was continuously just patching it for the Thank You card and I could not make it significantly better on my final code review either. I'm pretty sure there are better solutions for that.
 
 ## Author
 

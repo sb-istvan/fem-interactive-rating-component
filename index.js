@@ -1,25 +1,24 @@
-// Handling rating selection
+// Passing selected rating to its variable
+let selectedRating = 0;
 const ratings = document.querySelectorAll('.rate');
-const button = document.querySelector('button');
-ratings.forEach(selectedRating => {
-    selectedRating.addEventListener('click', () => {
-        button.classList.remove('warning'); // resetting previously activated warning message (if any)
+ratings.forEach(rating => {
+    rating.addEventListener('click', (e) => {
         button.innerText = 'Submit';
-        ratings.forEach(unselectPrev => unselectPrev.classList.remove('selected')); // removing previously selected rating
-        selectedRating.classList.add('selected'); // keep clicked rating selected
-    });
+        button.classList.remove('warning');
+        selectedRating = e.target.innerText;
+    })
 })
 
 // Submitting selected rating
 const ratingPanel = document.querySelector('#rating-panel');
 const feedbackPanel = document.querySelector('#feedback-panel');
 const feedbackText = document.querySelector('#feedback-text');
+const button = document.querySelector('.submit');
 button.addEventListener('click', () => {
-    if (document.querySelector('.selected')) { // switching to feedback panel if any rating selected
+    if (selectedRating !== 0) { // switching to feedback panel if any rating selected
         ratingPanel.style.visibility = 'hidden';
         feedbackPanel.style.visibility = 'visible';
-        const clickedRating = document.querySelector('.selected').innerHTML;
-        feedbackText.innerText = `You selected ${clickedRating} out of 5`;
+        feedbackText.innerText = `You selected ${selectedRating} out of 5`;
     }
     else { // warning message if no rating selected
         button.innerText = 'Please choose a rating';

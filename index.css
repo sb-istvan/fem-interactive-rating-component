@@ -64,7 +64,7 @@ p {
     padding: 1.8rem 0;
 }
 
-.rating-container > div {
+.rate {
     width: 2.6rem;
     height: 2.6rem;
     padding: 0.8625rem;
@@ -75,19 +75,20 @@ p {
     background: var(--dark-blue);
     border-radius: 50%;
     cursor: pointer;
+    border: 0;
 }
 
-.rating-container > div:hover {
+.rate:hover {
     color: var(--white);
     background-color: var(--orange);
 }
 
-div.selected {
+.rate:focus {
     color: var(--white);
     background-color: var(--medium-grey);
 }
 
-button {
+button.submit {
     width: 100%;
     height: 2.8rem;
     font-size: 0.9375rem;
@@ -103,12 +104,12 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+button.submit:hover {
     color: var(--orange);
     background-color: var(--white);
 }
 
-.warning, .warning:hover {
+button.warning, button.warning:hover {
     background-color: var(--warning-red);
     color: var(--white);
 }
@@ -149,7 +150,7 @@ button:hover {
     p {
         font-size: 0.9375rem;
     }
-    .rating-container > div {
+    .rate {
         font-size: 1rem;
         width: 3.2rem;
         height: 3.2rem;
